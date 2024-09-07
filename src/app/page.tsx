@@ -1,5 +1,15 @@
-import Main from '@/components/Main'
+import React from 'react';
 
-export default function Home() {
-  return <Main />
+type MainProps = {
+  children?: React.ReactNode;
+};
+
+function Main({ children }: MainProps) {
+  return (
+    <div>
+      {children}
+    </div>
+  );
 }
+
+export default Main;

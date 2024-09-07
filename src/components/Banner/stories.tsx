@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
-import JHcomponent from '.'
+import Banner from '.'
 
 export default {
-  title: 'JHcomponent',
-  component: JHcomponent
+  title: 'Banner',
+  component: Banner
 } as Meta
 
 export const Default: StoryObj = {}

@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   staticDirs: ['../public'],
   stories: ['../src/components/**/stories.tsx'],
@@ -10,8 +12,14 @@ const config = {
     autodocs: true
   },
   webpackFinal: (config) => {
-    config.resolve.modules.push(`${process.cwd()}/src`)
-    return config
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../src'),
+    };
+    config.resolve.modules = [...(config.resolve.modules || []), path.resolve(__dirname, '../src')];
+
+    return config;
   }
-}
-export default config
+};
+
+export default config;
