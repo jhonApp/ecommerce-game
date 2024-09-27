@@ -4,6 +4,11 @@ import Highlight, { HighlightProps } from '.'
 export default {
   title: 'Highlight',
   component: Highlight,
+  parameters: {
+    backgrounds: {
+      default: 'won-dark'
+    }
+  },
   args: {
     title: 'Read Dead is back!',
     subtitle: 'Come see John’s new adventures',

@@ -4,6 +4,11 @@ import Ribbon, { RibbonProps } from '.'
 export default {
   title: 'Ribbon',
   component: Ribbon,
+  parameters: {
+    backgrounds: {
+      default: 'won-dark'
+    }
+  },
   args: {
     children: 'Best Seller'
   },
