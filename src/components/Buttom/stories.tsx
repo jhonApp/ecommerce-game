@@ -5,6 +5,11 @@ import Button from '.';
 export default {
   title: 'Button',
   component: Button,
+  parameters: {
+    backgrounds: {
+      default: 'won-dark'
+    }
+  },
   argTypes: {
     children: {
       type: 'string',

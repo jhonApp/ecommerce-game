@@ -3,7 +3,12 @@ import MediaMatch from '.'
 
 export default {
   title: 'MediaMatch',
-  component: MediaMatch
+  component: MediaMatch,
+  parameters: {
+    backgrounds: {
+      default: 'won-dark'
+    }
+  },
 } as Meta
 
 export const Desktop: StoryFn = () => (

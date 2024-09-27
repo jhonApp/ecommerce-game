@@ -6,7 +6,10 @@ export default {
   title: 'Main',
   component: Main,
   parameters: {
-    layout: 'fullscreen'
+    layout: 'fullscreen',
+    backgrounds: {
+      default: 'won-dark'
+    }
   }
 } as Meta
 
